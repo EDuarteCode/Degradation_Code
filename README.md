@@ -1,50 +1,55 @@
 # Degradation_Code
 
-# Modelación de Carbono Degradado (MCD)
-MCD es un compendio de script (basado en la nube de GEE) para la estimación de la degradación forestal utilizando los datos del sensor Landsat (l5, L7 y L8) y datos de campos provenientes de inventarios forestales. El estudio se desarrollo para medir degradación forestal en lo ecosistemas de Conífera en la Republica Dominicana. MCD esta diseñado para estimar la degradación basado en un enfoque de monitoreo mixto, que permite combinar los sensores remotos y datos de campos. Los modelos aplicados para el análisis de degradación utilizan modelos de mezclas espectrales y todo el procesamiento se realiza utilizando la plataforma de GEE.
+# Modelación de Carbono Degradado
+Degraded Carbon Modeling (DCM) is a Google Earth Engine (GEE) cloud-based script compendium for estimating forest degradation using Landsat sensor data (L5, L7, and L8) and field data from forest inventories.
 
-En los siguientes enlaces se podrá encontrar cada uno de los Script que permiten la estimación de la degradación forestal:
+DCM uses spectral mixture models for mapping forest degradation. The study was developed to estimate forest degradation in the pine forests of the Dominican Republic. The study can be cited as “Duarte E, Barrera JA, Dube F, Casco F, Alexander AJ, Zagal E. Monitoring approach for tropical forest degradation using remote sensing and data field. 2020”
 
-# Pre-Procesamiento Digital
-
-Paso 1. Mosaicos completamente libres de Nubes
-https://code.earthengine.google.com/c296147d4f5a097d117096e107679d63
-
-Paso 2. Corrección Topográfica
-https://code.earthengine.google.com/c43a5d32bb4f7925faed31c3446095fd
+The complete model contains 10 steps that must be applied in the order indicated.
 
 
-# Análisis de Dinámica
 
-Paso 3. Análisis de Dinámica 1 (Forest, No Forest, Loss y Gain)
-https://code.earthengine.google.com/aecd3b7850383064d8dc8f1d248d11fc
+# Pre-processing 
 
-Paso 4. Análisis de Dinámica 2 (Forest y Degradation)
-https://code.earthengine.google.com/f3d2abde494a7e27d1fa1f3283424ddc
+Step 1. Cloud-free composite mosaic. https://code.earthengine.google.com/59d2e5ea1460cc94c17ba3b7e328203d
 
-Paso 5. Unión de Dinámicas (Dinámica 1 y 2) 
-https://code.earthengine.google.com/c37397937274468bfdcf01bafaadaf1e
+Step 2. Topographic correction. https://code.earthengine.google.com/b5c04df93dbfa9704196a2d70ef89008
 
 
-# Modelaciones
 
-Paso 6. Magnitud del Cambio
-https://code.earthengine.google.com/b80f57925ed0325d8d8474e5488854a5
+# Dynamic land change cover analysis
 
-Paso 7. Modelación de Carbono
-https://code.earthengine.google.com/b8251040a673b6b1bf75fe9b672702b5
+Step 3. Dynamic land cover change analysis (stable forest, stable non-forest, deforestation and forest restored).
+https://code.earthengine.google.com/0c477166d32a49483b630615bbf144f4
+
+Step 4. Degradation analysis (stable forest and forest degraded).
+https://code.earthengine.google.com/d0e36ff232471f10dcf9f503a2bc69c3
+
+Step 5. Dynamic land cover change final (stable forest, stable non-forest, deforestation, forest restored and forest degraded). 
+https://code.earthengine.google.com/bd193a622a94bf1e1abe273d92a25c4a
 
 
-# Validación de datos
 
-Paso 8. Estimación de índices Espectrales
-https://code.earthengine.google.com/9dd5fe84f933f1baa386b55a6a9237a2
+# Modeling
 
-Paso 9. Asignación de Propiedades de Series Temporales (Validación)
-https://code.earthengine.google.com/ff5b9296940ca3a1218081c7b37cf297
+Step 6. Change magnitude.
+https://code.earthengine.google.com/26905ece22e44b9d3b9bd59b6037f3b5
 
-Paso 10. Interpretación de Series Temporales 
-https://code.earthengine.google.com/1f2d4661faffaa1ca1c12d40a9390195
+Step 7. Carbon modeling.
+https://code.earthengine.google.com/6749589abc3ec9377b49926b43eb663c
+
+
+
+# Accuracy assessment
+
+Step 8. Spectral indices
+https://code.earthengine.google.com/57254f336d87fc09de2b83e1d309feb8
+
+Step 9. Landsat Time Series 
+https://code.earthengine.google.com/26a24f91678b422f90974d0451dd7fe9
+
+Step 10. Landsat Time Series viewer
+https://code.earthengine.google.com/de48df568f425973a85673aa6651cb8d
 
 
 
