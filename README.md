@@ -3,7 +3,7 @@
 # Degraded Carbon Modeling
 Degraded Carbon Modeling (DCM) is a Google Earth Engine (GEE) cloud-based script compendium for estimating forest degradation using Landsat sensor data (L5, L7, and L8) and field data from forest inventories.
 
-DCM uses spectral mixture models for mapping forest degradation. The study was developed to estimate forest degradation in the pine forests of the Dominican Republic. The study can be cited as “Duarte E, Barrera JA, Dube F, Casco F, Alexander AJ, Zagal E. Monitoring approach for tropical forest degradation using remote sensing and data field. 2020”
+DCM uses spectral mixture models for mapping forest degradation. The study was developed to estimate forest degradation in the pine forests of the Dominican Republic. The study can be cited as “Duarte E, Barrera JA, Dube F, Casco F, Alexander AJ, Zagal E. Monitoring approach for tropical coniferous forests degradation using remote sensing and data field. 2020”
 
 The complete model contains 10 steps that must be applied in the order indicated.
 
